@@ -1,0 +1,34 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "MERN stack",
+  "main": "server.js",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "express": "^4.17.1",
+    "react-bootstrap": "^1.4.0",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lexun1060/shop.git"
+  },
+  "keywords": [
+    "MERN",
+    "REACT",
+    "NODE",
+    "EXPRESS",
+    "JAVASCRIPT"
+  ],
+  "author": "lexun1060",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lexun1060/shop/issues"
+  },
+  "homepage": "https://github.com/lexun1060/shop#readme"
+}
