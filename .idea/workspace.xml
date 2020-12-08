@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d174dc1b-8ab0-4d55-a91f-b0f8d7d8b728" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/config/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/orderModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/productModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/userModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/data/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/data/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/db.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
@@ -41,7 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/models" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -54,6 +55,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/models" />
       <recent name="$PROJECT_DIR$/backend/data" />
       <recent name="$PROJECT_DIR$/frontend/src" />
     </key>
@@ -74,7 +76,8 @@
       <workItem from="1607256586681" duration="11574000" />
       <workItem from="1607331363757" duration="3618000" />
       <workItem from="1607411677228" duration="2528000" />
-      <workItem from="1607414952593" duration="1844000" />
+      <workItem from="1607414952593" duration="4637000" />
+      <workItem from="1607425771855" duration="3011000" />
     </task>
     <servers />
   </component>
