@@ -1,14 +1,20 @@
-import {Router} from 'mongoose'
+import {Router} from 'express'
 import asyncHandler from "express-async-handler";
-import Product from "../models/productModel";
+import Product from "../models/productModel.js";
 const router = Router()
 
-router.get('/api/products', asyncHandler(async (req, res) => {
+// @desc     Fetch all products
+// @route    GET /api/products
+// @access   Public
+router.get('/', asyncHandler(async (req, res) => {
     const products = await Product.find({})
     res.json(products)
 }))
 
-router.get('/api/products/:id', asyncHandler(async (req, res) => {
+// @desc     Fetch single product
+// @route    GET /api/products/id
+// @access   Public
+router.get('/:id', asyncHandler(async (req, res) => {
     const product = await Product.findById(req.params.id)
     res.json(product)
 }))

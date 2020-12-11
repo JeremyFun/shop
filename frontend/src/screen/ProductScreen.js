@@ -1,11 +1,18 @@
-import React from 'react'
-import products from '../products';
+import React, {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
 import {Row, Col, Image, Card, ListGroup, Button} from 'react-bootstrap'
 import Rating from "../components/Rating";
+import axios from "axios";
 
 const ProductScreen = ({match}) => {
-    const product = products.find(p => p._id === match.params.id)
+    const [product, setProduct] = useState({})
+    useEffect(() => {
+        async function fetchData() {
+            const {data} = await axios.get(`/api/products/${match.params.id}`)
+            setProduct(data)
+        }
+        fetchData()
+    }, [match.params.id])
     return <>
         <Link className="btn btn-light my-3" to="/">
             Go back
@@ -20,7 +27,7 @@ const ProductScreen = ({match}) => {
                         <h3>{product.name}</h3>
                     </ListGroup.Item>
                     <ListGroup.Item>
-                        <Rating value={product.rating} text={`${product.numReviews} reviews`} />
+                        <Rating value={product.rating} text={`${product.numReviews} reviews`}/>
                     </ListGroup.Item>
                     <ListGroup.Item>
                         Price: ${product.price}
@@ -52,7 +59,7 @@ const ProductScreen = ({match}) => {
                 </Card>
             </Col>
         </Row>
-        </>
+    </>
 }
 
 export default ProductScreen
