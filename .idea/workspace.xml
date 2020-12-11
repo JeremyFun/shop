@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d174dc1b-8ab0-4d55-a91f-b0f8d7d8b728" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/data/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/seeder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/routes/productRoutes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/data/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/data/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/orderModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/orderModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -103,7 +99,8 @@
       <workItem from="1607494161791" duration="1291000" />
       <workItem from="1607517318080" duration="624000" />
       <workItem from="1607585028482" duration="1743000" />
-      <workItem from="1607601843755" duration="7524000" />
+      <workItem from="1607601843755" duration="9667000" />
+      <workItem from="1607670048382" duration="1549000" />
     </task>
     <servers />
   </component>
@@ -133,15 +130,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/frontend/src/screen/HomeScreen.js</url>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
