@@ -2,17 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d174dc1b-8ab0-4d55-a91f-b0f8d7d8b728" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/actions/productActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/constants/productConstants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/reducers/productReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/actions/cartActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/constants/cartConstants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/reducers/cartReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/screen/CartScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]2/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/productRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/productRoutes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/actions/productActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/actions/productActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Rating.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Rating.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/constants/productConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/constants/productConstants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/reducers/productReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/reducers/productReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/screen/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/screen/HomeScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/screen/ProductScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/screen/ProductScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +46,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1lHRH6ZnkQYpzn7aeMuqt1qlwEa" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -44,7 +57,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/src/actions" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -52,15 +65,17 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/actions" />
+      <recent name="$PROJECT_DIR$/frontend/src/constants" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/backend/models" />
       <recent name="$PROJECT_DIR$/backend/data" />
-      <recent name="$PROJECT_DIR$/frontend/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/backend/data" />
@@ -120,7 +135,19 @@
       <workItem from="1607601843755" duration="9667000" />
       <workItem from="1607670048382" duration="1549000" />
       <workItem from="1607672480255" duration="8676000" />
-      <workItem from="1607684670879" duration="1915000" />
+      <workItem from="1607684670879" duration="7120000" />
+      <workItem from="1607763503101" duration="2452000" />
+      <workItem from="1607844514942" duration="9405000" />
+      <workItem from="1607857501086" duration="3009000" />
+      <workItem from="1607963613309" duration="1540000" />
+      <workItem from="1608031244514" duration="1543000" />
+      <workItem from="1608035197212" duration="1198000" />
+      <workItem from="1608038637143" duration="38000" />
+      <workItem from="1608129755929" duration="1451000" />
+      <workItem from="1608184390027" duration="870000" />
+      <workItem from="1608196247170" duration="4175000" />
+      <workItem from="1608207078125" duration="4045000" />
+      <workItem from="1608215103300" duration="1799000" />
     </task>
     <servers />
   </component>
@@ -150,5 +177,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -1,6 +1,7 @@
 import {Router} from 'express'
 import asyncHandler from "express-async-handler";
 import Product from "../models/productModel.js";
+
 const router = Router()
 
 // @desc     Fetch all products
