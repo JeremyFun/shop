@@ -2,7 +2,7 @@ import React, {useEffect} from 'react'
 import {useDispatch, useSelector} from "react-redux";
 import {Link} from "react-router-dom";
 import { Row, Col, ListGroup, Image, Form, Button, Card } from "react-bootstrap";
-import { addToCard } from "../actions/cartActions";
+import { addToCard, removeToCard } from "../actions/cartActions";
 import Message from "../components/Message";
 
 const CartScreen = ({match, location, history}) => {
@@ -22,7 +22,7 @@ const CartScreen = ({match, location, history}) => {
     }, [dispatch, productId, qty])
 
     const removeFromCartHandler = (id) => {
-        console.log(id, 'remove')
+        dispatch(removeToCard(id))
     }
 
     const checkoutHandler = () => {
@@ -30,6 +30,7 @@ const CartScreen = ({match, location, history}) => {
     }
   return (
     <Row>
+
         <Col md={8}>
             <h1>Shopping Cart</h1>
             {cartItems.length  === 0
@@ -66,15 +67,15 @@ const CartScreen = ({match, location, history}) => {
                         </ListGroup.Item>
                     ))}
             </ListGroup> }
-
         </Col>
+
         <Col md={4}>
             <Card>
                 <ListGroup variant='flush'>
                     <ListGroup.Item>
                         <h2>Subtotal
                             ({cartItems.reduce((acc, item) => acc + item.qty, 0)}) items</h2>
-                        ${cartItems.reduce((acc, item) => acc + item.qty * item.price, 0)}
+                        ${cartItems.reduce((acc, item) => acc + item.qty * item.price, 0).toFixed(2)}
                     </ListGroup.Item>
                     <ListGroup.Item>
                         <Button
