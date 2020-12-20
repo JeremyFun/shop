@@ -1,5 +1,4 @@
 import {CART_ADD_ITEM, CART_REMOVE_ITEM} from "../constants/cartConstants";
-import {act} from "@testing-library/react";
 
 export const cartReducer = (state = { cartItems: [] }, action) => {
     switch (action.type) {

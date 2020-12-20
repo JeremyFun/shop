@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d174dc1b-8ab0-4d55-a91f-b0f8d7d8b728" name="Default Changelist" comment="realized cart in frontend">
-      <change afterPath="$PROJECT_DIR$/backend/controllers/productControllers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/controllers/usersControllers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/middleware/authMiddleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/routes/userRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/utils/generateToken.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/userModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/userModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/routes/productRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/productRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/reducers/cartReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/reducers/cartReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/screen/CartScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/screen/CartScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/routes" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -46,17 +56,17 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/routes" />
       <recent name="$PROJECT_DIR$/backend/controllers" />
       <recent name="$PROJECT_DIR$/frontend/src/actions" />
       <recent name="$PROJECT_DIR$/frontend/src/constants" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/backend/models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/backend/data" />
@@ -128,7 +138,15 @@
       <workItem from="1608184390027" duration="870000" />
       <workItem from="1608196247170" duration="4175000" />
       <workItem from="1608207078125" duration="4045000" />
-      <workItem from="1608215103300" duration="4162000" />
+      <workItem from="1608215103300" duration="4877000" />
+      <workItem from="1608234093458" duration="51000" />
+      <workItem from="1608320040144" duration="678000" />
+      <workItem from="1608361195408" duration="7938000" />
+      <workItem from="1608380383103" duration="1071000" />
+      <workItem from="1608448384340" duration="3545000" />
+      <workItem from="1608455188181" duration="22000" />
+      <workItem from="1608455222321" duration="255000" />
+      <workItem from="1608455487277" duration="8381000" />
     </task>
     <task id="LOCAL-00001" summary="realized cart in frontend">
       <created>1608217070993</created>
@@ -154,7 +172,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="backend-auth" />
                       </list>
                     </value>
                   </entry>
