@@ -2,19 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d174dc1b-8ab0-4d55-a91f-b0f8d7d8b728" name="Default Changelist" comment="realized cart in frontend">
-      <change afterPath="$PROJECT_DIR$/backend/controllers/usersControllers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/middleware/authMiddleware.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/routes/userRoutes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/utils/generateToken.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/actions/userActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/FormContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/constants/userConstants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/reducers/userReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/screen/LoginScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/screen/RegisterScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/userModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/userModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/productRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/productRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/reducers/cartReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/reducers/cartReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/screen/CartScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/screen/CartScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/routes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/src/screen" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -62,11 +62,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/screen" />
       <recent name="$PROJECT_DIR$/backend/routes" />
       <recent name="$PROJECT_DIR$/backend/controllers" />
       <recent name="$PROJECT_DIR$/frontend/src/actions" />
       <recent name="$PROJECT_DIR$/frontend/src/constants" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/backend/data" />
@@ -146,7 +146,12 @@
       <workItem from="1608448384340" duration="3545000" />
       <workItem from="1608455188181" duration="22000" />
       <workItem from="1608455222321" duration="255000" />
-      <workItem from="1608455487277" duration="8381000" />
+      <workItem from="1608455487277" duration="15434000" />
+      <workItem from="1608541233864" duration="763000" />
+      <workItem from="1608548763433" duration="4868000" />
+      <workItem from="1608554868733" duration="2337000" />
+      <workItem from="1608579265676" duration="70000" />
+      <workItem from="1608620310372" duration="3272000" />
     </task>
     <task id="LOCAL-00001" summary="realized cart in frontend">
       <created>1608217070993</created>
