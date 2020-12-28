@@ -2,19 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d174dc1b-8ab0-4d55-a91f-b0f8d7d8b728" name="Default Changelist" comment="realized cart in frontend">
-      <change afterPath="$PROJECT_DIR$/backend/controllers/usersControllers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/middleware/authMiddleware.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/routes/userRoutes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/utils/generateToken.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/data/fd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/screen/ProfileScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/usersControllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/usersControllers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/models/userModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/userModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/productRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/productRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/userRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/userRoutes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/actions/userActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/actions/userActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/FormContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/FormContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Loader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Message.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Message.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/constants/userConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/constants/userConstants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/reducers/cartReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/reducers/cartReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/reducers/productReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/reducers/productReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/reducers/userReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/reducers/userReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/screen/CartScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/screen/CartScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/screen/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/screen/HomeScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/screen/LoginScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/screen/LoginScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/screen/ProductScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/screen/ProductScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/screen/RegisterScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/screen/RegisterScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +61,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/routes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/src/screen" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -62,11 +75,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/screen" />
       <recent name="$PROJECT_DIR$/backend/routes" />
       <recent name="$PROJECT_DIR$/backend/controllers" />
       <recent name="$PROJECT_DIR$/frontend/src/actions" />
       <recent name="$PROJECT_DIR$/frontend/src/constants" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/backend/data" />
@@ -146,7 +159,30 @@
       <workItem from="1608448384340" duration="3545000" />
       <workItem from="1608455188181" duration="22000" />
       <workItem from="1608455222321" duration="255000" />
-      <workItem from="1608455487277" duration="8381000" />
+      <workItem from="1608455487277" duration="15434000" />
+      <workItem from="1608541233864" duration="763000" />
+      <workItem from="1608548763433" duration="4868000" />
+      <workItem from="1608554868733" duration="2337000" />
+      <workItem from="1608579265676" duration="70000" />
+      <workItem from="1608620310372" duration="5142000" />
+      <workItem from="1608629189434" duration="1140000" />
+      <workItem from="1608636558112" duration="281000" />
+      <workItem from="1608639643707" duration="5000" />
+      <workItem from="1608639662757" duration="3516000" />
+      <workItem from="1608648555075" duration="885000" />
+      <workItem from="1608660388652" duration="18000" />
+      <workItem from="1608660490864" duration="540000" />
+      <workItem from="1608757052897" duration="1371000" />
+      <workItem from="1608812233134" duration="1814000" />
+      <workItem from="1608883400604" duration="17000" />
+      <workItem from="1608977277833" duration="642000" />
+      <workItem from="1608982862995" duration="597000" />
+      <workItem from="1608983746180" duration="836000" />
+      <workItem from="1609077295155" duration="599000" />
+      <workItem from="1609081636286" duration="2198000" />
+      <workItem from="1609084606845" duration="1153000" />
+      <workItem from="1609133548208" duration="2450000" />
+      <workItem from="1609145287959" duration="3115000" />
     </task>
     <task id="LOCAL-00001" summary="realized cart in frontend">
       <created>1608217070993</created>
@@ -172,7 +208,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="backend-auth" />
+                        <option value="front-user" />
                       </list>
                     </value>
                   </entry>
