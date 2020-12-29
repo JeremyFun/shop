@@ -1,9 +1,10 @@
 import axios from 'axios'
-import {CART_ADD_ITEM, CART_REMOVE_ITEM} from "../constants/cartConstants";
-
-const setItemToLocalStorage = (getState, name = 'cartItems') => {
-    localStorage.setItem(name, JSON.stringify(getState().cart.cartItems))
-}
+import {
+    CART_ADD_ITEM,
+    CART_REMOVE_ITEM,
+    CART_SAVE_PAYMENT_METHOD,
+    CART_SAVE_SHIPPING_ADDRESS
+} from "../constants/cartConstants";
 
 export const addToCard = (id, qty) => async (dispatch, getState) => {
     try {
@@ -20,7 +21,7 @@ export const addToCard = (id, qty) => async (dispatch, getState) => {
                 qty
             }
         })
-        setItemToLocalStorage(getState)
+        localStorage.setItem('cartItems', JSON.stringify(getState().cart.cartItems))
     } catch (error) {
         console.log(error, 'Action addToCard')
     }
@@ -32,8 +33,34 @@ export const removeToCard = (id) => async (dispatch, getState) => {
             type: CART_REMOVE_ITEM,
             payload: id
         })
-        setItemToLocalStorage(getState)
+        localStorage.setItem('cartItems', JSON.stringify(getState().cart.cartItems))
     } catch (error) {
         console.log(error, 'Action removeToCard')
     }
+}
+
+export const saveShippingAddress = (shippingAddress) => async (dispatch, getState) => {
+    try {
+        dispatch({
+            type: CART_SAVE_SHIPPING_ADDRESS,
+            payload: shippingAddress
+        })
+        localStorage.setItem('shippingAddress', JSON.stringify(getState().cart.shippingAddress))
+    } catch (error) {
+        console.log(error, 'Action shippingCart')
+    }
+
+}
+
+export const savePaymentMethod = (data) => async (dispatch, getState) => {
+    try {
+        dispatch({
+            type: CART_SAVE_PAYMENT_METHOD,
+            payload: data
+        })
+        localStorage.setItem('paymentMethod', JSON.stringify(getState().cart.shippingAddress))
+    } catch (error) {
+        console.log(error, 'Action shippingCart')
+    }
+
 }

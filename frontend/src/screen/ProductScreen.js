@@ -1,13 +1,13 @@
-import React, {useEffect, useState} from 'react'
-import {Link} from 'react-router-dom'
-import {Row, Col, Image, Card, ListGroup, Button, Form} from 'react-bootstrap'
-import Rating from "../components/Rating";
-import {useDispatch, useSelector} from "react-redux";
-import {listProductsDetails} from "../actions/productActions";
-import Loader from "../components/Loader";
-import Message from "../components/Message";
+import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+import { Row, Col, Image, Card, ListGroup, Button, Form } from 'react-bootstrap'
+import Rating from "../components/Rating"
+import { useDispatch, useSelector } from "react-redux"
+import { listProductsDetails } from "../actions/productActions"
+import Loader from "../components/Loader"
+import Message from "../components/Message"
 
-const ProductScreen = ({match, history}) => {
+const ProductScreen = ({ match, history }) => {
     const dispatch = useDispatch()
     const [qty, setQty] = useState(1)
     useEffect(() => {
