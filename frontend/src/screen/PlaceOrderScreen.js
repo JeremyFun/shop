@@ -1,12 +1,15 @@
-import React from "react"
+import React, {useEffect} from "react"
 import { Link } from "react-router-dom"
 import { Button, Row, Col, ListGroup, Image, Card } from "react-bootstrap"
-import { useSelector } from "react-redux"
+import {useDispatch, useSelector} from "react-redux"
 import Message from "../components/Message"
 import CheckoutSteps from "../components/CheckoutSteps"
+import {createOrder} from "../actions/orderActions";
 
-const ShippingScreen = () => {
+const ShippingScreen = ({ history }) => {
     const cart = useSelector(state => state.cart)
+
+    const dispatch = useDispatch()
 
     // Calculate prices
     const addDecimals = (num) => {
@@ -18,16 +21,34 @@ const ShippingScreen = () => {
     cart.taxPrice = addDecimals(Number((0.15 * cart.itemsPrice).toFixed(2)))
     cart.totalPrice = (Number(cart.itemsPrice)  + Number(cart.shippingPrice) + Number(cart.taxPrice)).toFixed(2)
 
+    const { error, success, order} = useSelector(state => state.createOrder)
+
     const placeOrderHandler = () => {
-        console.log('order')
+        dispatch(createOrder({
+            orderItems: cart.cartItems,
+            shippingAddress: cart.shippingAddress,
+            paymentMethod: cart.paymentMethod,
+            itemsPrice: cart.itemsPrice,
+            shippingPrice: cart.shippingPrice,
+            taxPrice: cart.taxPrice,
+            totalPrice: cart.totalPrice
+        }))
+        // eslint-disable-next-line
     }
+
+    useEffect(() => {
+        if(success) {
+            debugger
+            history.push(`/order/${order._id}`)
+        }
+    }, [success, history])
 
     return (
         <>
             <CheckoutSteps step1 step2 step3/>
             <Row>
                 <Col md={8}>
-                    <ListGroup variant="flush" fluid rounded>
+                    <ListGroup variant="flush">
                         <ListGroup.Item>
                             <h2>Shipping</h2>
                             <p>
@@ -50,7 +71,7 @@ const ShippingScreen = () => {
                                 : (
                                     <ListGroup variant='flush'>
                                         {cart.cartItems.map((item, index) => (
-                                            <ListGroup.Item>
+                                            <ListGroup.Item key={index}>
                                                 <Row>
                                                     <Col md={1}>
                                                         <Image src={item.image} alt={item.name} fluid rounded/>
@@ -114,6 +135,7 @@ const ShippingScreen = () => {
                                     </Col>
                                 </Row>
                             </ListGroup.Item>
+                                {error && <Message variant="danger">{error}</Message>}
                             <ListGroup.Item>
                                 <Button type='button' className='btn-block' disabled={cart.cartItems === 0}
                                         onClick={placeOrderHandler}>Place order</Button>

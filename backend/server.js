@@ -17,7 +17,7 @@ app.use(express.json())
 
 app.use('/api/products', productRoutes)
 app.use('/api/users', userRoutes)
-app.use('/api/order', orderRoutes)
+app.use('/api/orders', orderRoutes)
 
 app.use(notFound)
 app.use(errorHandler)

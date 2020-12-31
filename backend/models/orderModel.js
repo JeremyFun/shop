@@ -26,7 +26,7 @@ const orderSchema = mongoose.Schema({
             country: {type: String, required: true},
         },
         paymentMethod: {
-            type: Boolean,
+            type: String,
             required: true
         },
         paymentResult: {
@@ -52,7 +52,6 @@ const orderSchema = mongoose.Schema({
         },
         isPaid: {
             type: Boolean,
-            required: true,
             default: false
         },
         paidAt: {
@@ -60,7 +59,6 @@ const orderSchema = mongoose.Schema({
         },
         isDelivered: {
             type: Boolean,
-            required: true,
             default: false
         },
         deliveredAt: {
