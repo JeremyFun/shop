@@ -58,9 +58,8 @@ export const savePaymentMethod = (data) => async (dispatch, getState) => {
             type: CART_SAVE_PAYMENT_METHOD,
             payload: data
         })
-        localStorage.setItem('paymentMethod', JSON.stringify(getState().cart.shippingAddress))
+        localStorage.setItem('paymentMethod', JSON.stringify(getState().cart.paymentMethod))
     } catch (error) {
-        console.log(error, 'Action shippingCart')
+        console.log(error, 'Action paymentMethod')
     }
-
 }

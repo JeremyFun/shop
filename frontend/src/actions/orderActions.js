@@ -38,7 +38,7 @@ export const createOrder = (order) => async (dispatch, getState) => {
 }
 
 
-export const detailsOrder = (id) => async (dispatch, getState) => {
+export const getOrderDetails = (id) => async (dispatch, getState) => {
     try {
         dispatch({
             type: DETAILS_ORDER_REQUEST
@@ -52,6 +52,7 @@ export const detailsOrder = (id) => async (dispatch, getState) => {
             }
         }
         const { data } = await axios.get(`/api/orders/${id}`, config)
+        debugger
         dispatch({
             type: DETAILS_ORDER_SUCCESS,
             payload: data

@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d174dc1b-8ab0-4d55-a91f-b0f8d7d8b728" name="Default Changelist" comment="realized cart in frontend">
+      <change afterPath="$PROJECT_DIR$/frontend/src/screen/OrderScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/screen/utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/orderControllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/orderControllers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/orderRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/orderRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/actions/cartActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/actions/cartActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/actions/orderActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/actions/orderActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/constants/orderConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/constants/orderConstants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/reducers/cartReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/reducers/cartReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/reducers/orderReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/reducers/orderReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/screen/PaymentScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/screen/PaymentScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/screen/PlaceOrderScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/screen/PlaceOrderScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +35,14 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1lHRH6ZnkQYpzn7aeMuqt1qlwEa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -174,7 +188,8 @@
       <workItem from="1609338108403" duration="33000" />
       <workItem from="1609395051137" duration="1371000" />
       <workItem from="1609398235396" duration="3896000" />
-      <workItem from="1609532354431" duration="864000" />
+      <workItem from="1609532354431" duration="1500000" />
+      <workItem from="1609571857423" duration="13439000" />
     </task>
     <task id="LOCAL-00001" summary="realized cart in frontend">
       <created>1608217070993</created>
