@@ -3,10 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d174dc1b-8ab0-4d55-a91f-b0f8d7d8b728" name="Default Changelist" comment="realized cart in frontend">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/actions/orderActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/actions/orderActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/constants/orderConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/constants/orderConstants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/reducers/orderReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/reducers/orderReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/screen/OrderScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/screen/OrderScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +183,11 @@
       <workItem from="1609395051137" duration="1371000" />
       <workItem from="1609398235396" duration="3896000" />
       <workItem from="1609532354431" duration="1500000" />
-      <workItem from="1609571857423" duration="15015000" />
+      <workItem from="1609571857423" duration="15657000" />
+      <workItem from="1609616307863" duration="1085000" />
+      <workItem from="1609671602349" duration="1137000" />
+      <workItem from="1609673540189" duration="1102000" />
+      <workItem from="1609679916418" duration="3307000" />
     </task>
     <task id="LOCAL-00001" summary="realized cart in frontend">
       <created>1608217070993</created>
