@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from "react"
-import {Form, Button, Row, Col} from "react-bootstrap"
+import React, {useState, useEffect} from "react"
+import {LinkContainer} from "react-router-bootstrap"
+import {Form, Button, Row, Col, Table} from "react-bootstrap"
 import {useDispatch, useSelector} from "react-redux"
 import Message from "../components/Message"
 import Loader from "../components/Loader"
-import { getUserProfile, updateUserProfile } from "../actions/userActions"
+import {getUserProfile, updateUserProfile} from "../actions/userActions"
+import {listMyOrders} from "../actions/orderActions";
 
 const ProfileScreen = ({history}) => {
     const [name, setName] = useState('')
@@ -15,13 +17,16 @@ const ProfileScreen = ({history}) => {
     const dispatch = useDispatch()
 
     const userLogin = useSelector(state => state.userLogin)
-    const { userInfo } = userLogin
+    const {userInfo} = userLogin
 
     const userDetails = useSelector(state => state.userDetails)
-    const { user, loading, error } = userDetails
+    const {user, loading, error} = userDetails
+
+    const orderListMy = useSelector(state => state.orderListMy)
+    const {orders, loading: loadingOrders, error: errorOrders} = orderListMy
 
     const userUpdateProfile = useSelector(state => state.userUpdateProfile)
-    const { success } = userUpdateProfile
+    const {success} = userUpdateProfile
 
     const submitHandler = (e) => {
         e.preventDefault()
@@ -43,7 +48,11 @@ const ProfileScreen = ({history}) => {
                 setEmail(user.email)
             }
         }
-    }, [history, dispatch, userInfo, user])
+    }, [history, dispatch, userInfo, user, orders])
+    useEffect(() => {
+        dispatch(listMyOrders())
+    }, [])
+
 
     return (
         <>
@@ -51,7 +60,7 @@ const ProfileScreen = ({history}) => {
                 <Col md={3}>
                     {message && <Message variant='danger'>{message}</Message>}
                     {error && <Message variant='danger'>{error}</Message>}
-                    {success && <Message variant='success'>Profile Updated</Message> }
+                    {success && <Message variant='success'>Profile Updated</Message>}
                     {loading ? <Loader/> :
                         (
                             <Form onSubmit={submitHandler}>
@@ -102,11 +111,43 @@ const ProfileScreen = ({history}) => {
                         )}
                 </Col>
                 <Col md={9}>
-                    <h2>Here will your order</h2>
-                </Col>
-            </Row>
-        </>
-    )
-}
+                    <h2>My Orders</h2>
+                    {loadingOrders ? <Loader/> : errorOrders ? <Message variant='danger'>{errorOrders}</Message> : (
+                            <Table striped bordered hover responsive className="table-sm">
+                                <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>DATE</th>
+                                    <th>TOTAL</th>
+                                    <th>PAID</th>
+                                    <th>DELIVERED</th>
+                                    <th></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {orders.map((order, idx) => (
+                                    <tr key={order._id}>
+                                        <td>{order._id}</td>
+                                        <td>{order.createdAt}</td>
+                                        <td>{order.totalPrice}</td>
+                                        <td>{order.paidAt ? order.paidAt : <i className="fas fa-times" style={{color: "red"}}></i> }</td>
+                                        <td>{order.deliveredAt ? order.deliveredAt : <i className="fas fa-times" style={{color: "red"}}></i> }</td>
+                                        <td>
+                                            <LinkContainer to={`/order/${order._id}`}>
+                                                <Button variant={idx % 2 > 0 ? "info" : "light"}>
+                                                    Details
+                                                </Button>
+                                            </LinkContainer>
+                                        </td>
+                                    </tr>
+                                ))}
+                                </tbody>
+                            </Table>
+                        )}
+                        </Col>
+                        </Row>
+                        </>
+                        )
+                    }
 
-export default ProfileScreen
+                    export default ProfileScreen
