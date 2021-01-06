@@ -4,7 +4,7 @@ import {LinkContainer} from "react-router-bootstrap";
 import {useDispatch, useSelector} from "react-redux";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
-import {getAllUsers} from "../actions/userActions";
+import {deleteUser, getAllUsers} from "../actions/userActions";
 
 const UsersListScreen = ({ history }) => {
     const dispatch = useDispatch()
@@ -15,16 +15,20 @@ const UsersListScreen = ({ history }) => {
     const userLogin = useSelector(state => state.userLogin)
     const { userInfo } = userLogin
 
+    const userDelete = useSelector(state => state.userDelete)
+    const { success: successDelete } = userDelete
+
     useEffect(() => {
         if (userInfo && userInfo.isAdmin) {
             dispatch(getAllUsers())
         } else {
             history.push('/login')
         }
-    }, [dispatch, history, userInfo])
+    }, [dispatch, history, userInfo, successDelete])
 
     const deleteHandler = (id) => {
-        console.log('deleteHandler', id)
+        if (window.confirm('Are you confirm'))
+        dispatch(deleteUser(id))
     }
     return (
         <>
@@ -51,7 +55,7 @@ const UsersListScreen = ({ history }) => {
                                     : <i className="fas fa-times" style={{color: 'red'}}></i>}
                             </td>
                             <td>
-                                <LinkContainer to={`/user/${user.id}/edit`}>
+                                <LinkContainer to={`/admin/user/${user._id}/edit`}>
                                     <Button variant="light" className="btn-sm">
                                         <i className="fas fa-edit"></i>
                                     </Button>

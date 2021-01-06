@@ -49,6 +49,7 @@ const ProfileScreen = ({history}) => {
             }
         }
     }, [history, dispatch, userInfo, user, orders])
+
     useEffect(() => {
         dispatch(listMyOrders())
     }, [])

@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d174dc1b-8ab0-4d55-a91f-b0f8d7d8b728" name="Default Changelist" comment="realized cart in frontend">
-      <change afterPath="$PROJECT_DIR$/frontend/src/screen/UsersListScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/screen/UserEditScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/usersControllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/usersControllers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/middleware/authMiddleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/middleware/authMiddleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/routes/userRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/userRoutes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/actions/userActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/actions/userActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/constants/userConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/constants/userConstants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/reducers/userReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/reducers/userReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/screen/ProfileScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/screen/ProfileScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/screen/UsersListScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/screen/UsersListScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -193,6 +193,13 @@
       <workItem from="1609671602349" duration="1137000" />
       <workItem from="1609673540189" duration="1102000" />
       <workItem from="1609679916418" duration="13640000" />
+      <workItem from="1609751189252" duration="7496000" />
+      <workItem from="1609766907890" duration="1407000" />
+      <workItem from="1609918687290" duration="393000" />
+      <workItem from="1609921561634" duration="41000" />
+      <workItem from="1609923581552" duration="3673000" />
+      <workItem from="1609932920963" duration="717000" />
+      <workItem from="1609962928121" duration="2908000" />
     </task>
     <task id="LOCAL-00001" summary="realized cart in frontend">
       <created>1608217070993</created>
