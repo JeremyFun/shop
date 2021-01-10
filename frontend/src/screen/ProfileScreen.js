@@ -41,19 +41,15 @@ const ProfileScreen = ({history}) => {
         if (!userInfo) {
             history.push('/login')
         } else {
-            if (!user.name) {
+            if (!user || !user.name || success) {
                 dispatch(getUserProfile('profile'))
+                dispatch(listMyOrders())
             } else {
                 setName(user.name)
                 setEmail(user.email)
             }
         }
-    }, [history, dispatch, userInfo, user, orders])
-
-    useEffect(() => {
-        dispatch(listMyOrders())
-    }, [])
-
+    }, [dispatch, history, userInfo, user, success])
 
     return (
         <>

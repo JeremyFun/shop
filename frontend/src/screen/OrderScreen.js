@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from "react"
+import React, { useEffect, useState } from "react"
 import axios from "axios";
-import {useDispatch, useSelector} from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import Message from "../components/Message"
-import { getOrderDetails, payOrder } from "../actions/orderActions";
+import { getOrderDetails } from "../actions/orderActions";
 import Loader from "../components/Loader";
 import { Card, Col, Image, ListGroup, Row } from "react-bootstrap";
 import {Link} from "react-router-dom";
@@ -51,7 +51,6 @@ const OrderScreen = ({match}) => {
     }, [dispatch, orderId, successPay, order])
 
     const successPaymentHandler = (paymentResult) => {
-        console.log(paymentResult)
         dispatch(payOrder(orderId, paymentResult))
     }
     return loading ? <Loader /> : error ? <Message variant="danger">{error}</Message> :

@@ -100,6 +100,6 @@ export const orderListMyReducer = (state = {orders: []}, action) => {
                 orders: []
             }
         default:
-            return { ...state }
+            return state
     }
 }

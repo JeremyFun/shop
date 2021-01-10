@@ -8,7 +8,9 @@ import {
     PAY_ORDER_SUCCESS,
     PAY_ORDER_REQUEST,
     PAY_ORDER_FAIL,
-    PAY_ORDER_RESET, ORDER_LIST_MY_REQUEST, ORDER_LIST_MY_SUCCESS, ORDER_LIST_MY_FAIL
+    ORDER_LIST_MY_REQUEST,
+    ORDER_LIST_MY_SUCCESS,
+    ORDER_LIST_MY_FAIL
 } from "../constants/orderConstants"
 import axios from "axios"
 
@@ -117,11 +119,8 @@ export const listMyOrders = () => async (dispatch, getState) => {
             }
         }
         const { data } = await axios.get(`/api/orders/myorders`, config)
-        debugger
-        dispatch({
-            type: ORDER_LIST_MY_SUCCESS,
-            payload: data
-        })
+
+        dispatch({ type: ORDER_LIST_MY_SUCCESS, payload: data })
     } catch (error) {
         dispatch({
             type: ORDER_LIST_MY_FAIL,
