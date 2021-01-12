@@ -1,3 +1,8 @@
+# YATS_SHOP 
+
+![screenshot](https://github.com/lexun1060/shop/blob/master/uploads/Screen.png)
+
+
 ### Env Variables
 
 Create a .env file in then root and add the following
