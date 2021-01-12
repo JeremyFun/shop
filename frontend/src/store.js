@@ -3,19 +3,29 @@ import thunk from 'redux-thunk'
 import {composeWithDevTools} from "redux-devtools-extension";
 import {
     productCreateReducer,
+    productCreateReviewsReducer,
     productDeleteReducer,
     productDetailsReducer,
-    productListReducer, productUpdateReducer
+    productListReducer, productTopReducer,
+    productUpdateReducer
 } from "./reducers/productReducer";
 import {cartReducer} from "./reducers/cartReducer";
 import {
     userDeleteReducer,
     userDetailsReducer,
     userLoginReducer,
-    userRegisterReducer, usersListReducer,
-    userUpdateProfileReducer, userUpdateReducer
+    userRegisterReducer,
+    usersListReducer,
+    userUpdateProfileReducer,
+    userUpdateReducer
 } from "./reducers/userReducer";
-import {createOrderReducer, detailsOrderReducer, orderListMyReducer, payOrderReducer} from "./reducers/orderReducer";
+import {
+    createOrderReducer,
+    detailsOrderReducer,
+    orderListMyReducer,
+    orderListReducer,
+    payOrderReducer
+} from "./reducers/orderReducer";
 
 const reducers = combineReducers({
     productList: productListReducer,
@@ -23,6 +33,8 @@ const reducers = combineReducers({
     productDelete: productDeleteReducer,
     productCreate: productCreateReducer,
     productUpdate: productUpdateReducer,
+    productCreateReview: productCreateReviewsReducer,
+    productTop: productTopReducer,
     cart: cartReducer,
     userLogin: userLoginReducer,
     userRegister: userRegisterReducer,
@@ -34,7 +46,8 @@ const reducers = combineReducers({
     createOrder: createOrderReducer,
     detailsOrder: detailsOrderReducer,
     payOrder: payOrderReducer,
-    orderListMy: orderListMyReducer
+    orderListMy: orderListMyReducer,
+    orderList: orderListReducer
 })
 
 const cartItemsFromStorage = localStorage.getItem('cartItems')
