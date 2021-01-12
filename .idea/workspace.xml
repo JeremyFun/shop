@@ -2,39 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d174dc1b-8ab0-4d55-a91f-b0f8d7d8b728" name="Default Changelist" comment="realized cart in frontend">
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Meta.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Paginate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/ProductCarousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/SearchBox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/screen/OrdersListScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/orderControllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/orderControllers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/productControllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/productControllers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/data/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/data/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/orderRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/orderRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/productRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/productRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/actions/orderActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/actions/orderActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/actions/productActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/actions/productActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/constants/orderConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/constants/orderConstants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/constants/productConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/constants/productConstants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/reducers/orderReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/reducers/orderReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/reducers/productReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/reducers/productReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/screen/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/screen/HomeScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/screen/ProductScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/screen/ProductScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/screen/ProductsListScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/screen/ProductsListScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -240,7 +208,7 @@
       <workItem from="1610441646673" duration="6169000" />
       <workItem from="1610456897829" duration="1665000" />
       <workItem from="1610464783298" duration="4668000" />
-      <workItem from="1610471141657" duration="4755000" />
+      <workItem from="1610471141657" duration="5106000" />
     </task>
     <task id="LOCAL-00001" summary="realized cart in frontend">
       <created>1608217070993</created>
